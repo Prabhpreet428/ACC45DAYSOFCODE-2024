@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int K,a;
+    printf("enter the runs made by team;");
+    scanf("%d",&K);
+    printf("enter the team name; ");
+    scanf("%d",&a);
+    if (K>=12){
+        printf("YES the team is qualified ");
+    }
+    else{
+        printf("NO the is not qualified");
+    }
+}
