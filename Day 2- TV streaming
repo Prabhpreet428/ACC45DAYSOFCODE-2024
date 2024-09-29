@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int t;
+    printf("The number of test cases");
+    scanf("%d",&t); 
+    int n,x;
+    printf("Number of friends");
+    scanf("%d",&n); 
+    printf("cost of subscription:");
+    scanf("%d",&x); 
+    while(t--){
+        int subscription = (n+5)/6;
+        int total_cost = subscription*x;
+        printf("%d/n",total_cost);
+    }
+    return 0;
+}
