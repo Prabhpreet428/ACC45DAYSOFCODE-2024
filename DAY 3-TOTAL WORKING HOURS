@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int t;
+    printf("The number of test cases");
+    scanf("%d",&t); 
+    int x,n;
+    printf("Number working hours a day");
+    scanf("%d",&x); 
+    printf("hours worked on friday");
+    scanf("%d",&n); 
+    while(t--){
+        int hours = 4*x;
+        int total_cost = hours+n;
+        printf("%d/n",total_cost);
+    }
+    return 0;
+}
