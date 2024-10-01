@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int A, B, C, X;
+    printf("enter the choice of chef");
+    scanf("%d",&X);
+    if (X == A || X == B || X == C) {
+        printf("Yes he will win\n");
+    } else {
+        printf("No he will not win\n");
+    }
+}
