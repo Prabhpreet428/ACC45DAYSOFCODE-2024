@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int t ;
+    printf("enter no. of test cases");
+    scanf("%d",&t);
+    int B1,B2,B3,empty_count;
+    empty_count=(B1=0)+(B2=0)+(B3=0);
+    if(empty_count>1){
+        printf("WATER FILLING TIME");
+    }
+    else{
+        printf("NOT NOW");
+    }
+
+    return 0;
+}
