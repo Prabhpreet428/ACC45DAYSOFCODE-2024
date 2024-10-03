@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int T;
+    printf("Number of test cases;");
+    scanf("%d",&T);
+    while(T--){
+        int x,y;
+        scanf("%d %d",&X,&Y);
+        //case1
+        int point_A_first = (500-2*X)+(1000-4*(X+Y));
+        //case2
+        int point_B_first = (1000-4*Y)+(500-2*(X+Y));
+        
+        if(point_A_first > point_B_first){
+            printf("%d\n",point_A_first);
+        }
+        else{
+            printf("%d\n",point_B_first);
+        }
+    }
+    return 0;    
+}
