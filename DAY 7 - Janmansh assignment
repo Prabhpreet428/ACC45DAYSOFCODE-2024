@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int T;
+    printf("no. of test cases");
+    scanf("%d", &T);
+
+    for (int i = 0; i < T; i++) {
+        int X;
+        printf("enter time at which assignment started");
+        scanf("%d", &X);
+
+        if (X <= 7) {
+            printf("Yes\n");
+        } else {
+            printf("No\n");
+        }
+    }
+}
