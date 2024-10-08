@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int t;
+    printf("enter the no.of test cases");
+    scanf("%d",&t);
+    
+    while(t--){
+        int X,Y,Z;
+        scanf("%d %d",&X,&Y);
+        if (X>Y){
+            Z=X-Y;
+            printf("time",&Z);
+             if(X==Y){
+                Z=0;
+                printf("time",&Z);
+            }
+            else{
+                Z=Y-X;
+                printf("Time",&Z);
+            }
+        }
+    }
+}
