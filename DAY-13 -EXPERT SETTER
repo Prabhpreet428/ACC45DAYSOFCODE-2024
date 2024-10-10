@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int T;
+    printf("number of test cases");
+    scanf("%d",&T);
+    while(T--){
+        int x,y;
+        printf("number of problems submitted");
+        scanf("%d",&x);
+        printf("number of problems approved");
+        scanf("%d",&y);
+        if (y>=x/2){
+            printf("Yes he is expert \n");
+        }
+        else{
+            printf("No he is not expert\n");
+        }
+    }
+
+    return 0;
+}
