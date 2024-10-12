@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int t;
+    printf("number of test cases");
+    scanf("%d",&t);
+    while(t--){
+        int n,k,m;
+        scanf("%d %d %d",&n,&k,&m);
+        int capacity_per_bag = k*m;
+        int min_bags = (n+capacity_per_bag - 1)/capacity_per_bag;
+        printf("%d\n",min_bags);
+    }
+
+    return 0;
+}
