@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    float n,R,r,a,b,total_time;
+    printf("NUMBER OF TEAMS PARTICIPATING:");
+    scanf("%f",&n);
+    r =n/2;
+    printf("number of rounds are%f\n",r);
+    printf("ENTER TIME OF EACH ROUND:");
+    scanf("%f",&a);
+    printf("ENTER BREAK TIME AFTER EACH ROUND:");
+    scanf("%f",&b);
+    total_time=r*a+(r-1)*b;
+    printf("total time is  %f  \n",total_time);
+}
