@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int t;
+    printf("number of test cases");
+    scanf("%d",&t);
+    while(t--){
+        int n,x,y;
+        printf("number of problems");
+        scanf("%d",&n);
+        printf("maximum marks for each problem");
+        scanf("%d",&x);
+        printf("marks obtained by chef");
+        scanf("%d",&y);
+        if (y<=n*x||y%x==0){
+            printf("YES\n");
+        }else{
+            printf("NO\n");
+        }
+        
+    }
+
+    return 0;
+}
