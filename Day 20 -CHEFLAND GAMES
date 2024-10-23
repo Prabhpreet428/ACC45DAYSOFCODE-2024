@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int t;
+    printf("number of test cases ");
+    scanf("%d",&t);
+    while(t--){
+        int R1,R2,R3,R4;
+        printf("Point of first referee");
+        scanf("%d",&R1);
+        printf("Point of second referee");
+        scanf("%d",&R2);
+        printf("Point of third referee");
+        scanf("%d",&R3);
+        printf("Point of fourth referee");
+        scanf("%d",&R4);
+        if (R1==0&&R2==0&&R3==0&&R4==0){
+            printf("IN\n");
+        }else{
+            printf("OUT\n");
+        }
+    }
+
+    return 0;
+}
