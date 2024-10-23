@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int t;
+    printf("number of test cases ");
+    scanf("%d",&t);
+    while(t--){
+        int H,X,Y,total_attacks,remaining_health,attacks_with_special,attacks_without_special,min_attacks;
+        printf("HEALTH POINT OF BOSS ");
+        scanf("%d",&H);
+        printf("NORMAL ATTACK BY CHEF ");
+        scanf("%d",&X);
+        printf("MOST ATTACK BY CHIEF");
+        scanf("%d",&Y);
+        if (H-Y==0){
+            total_attacks=1;
+        }else{
+            remaining_health=H-Y;
+            attacks_with_special=(remaining_health+X-1)/X;
+            attacks_without_special=1+attacks_with_special;
+            min_attacks=min(total_attacks,attacks_with_special);
+        }
+    }
+    return 0;
+}
