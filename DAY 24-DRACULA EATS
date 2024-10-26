@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int T; 
+    scanf("%d", &T);
+    while (T--) {
+        int N; 
+        scanf("%d", &N);
+        int tuesdayCount = (N >= 1) ? (N - 1) / 7 + 1 : 0;
+        printf("%d\n", tuesdayCount);
+    }
+}
