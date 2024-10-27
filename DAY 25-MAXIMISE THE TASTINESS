@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int T;
+    scanf("%d", &T);
+    while (T--) {
+        int a, b, c, d;
+        scanf("%d %d %d %d", &a, &b, &c, &d);
+        int maxTastiness = a + c; 
+        if (b + c > maxTastiness) maxTastiness = b + c; 
+        if (a + d > maxTastiness) maxTastiness = a + d; 
+        if (b + d > maxTastiness) maxTastiness = b + d;
+        printf("%d\n", maxTastiness);
+    }
+}
