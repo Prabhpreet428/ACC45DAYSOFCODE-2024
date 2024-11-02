@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int T;
+    scanf("%d", &T);  
+    while (T--) {
+        int N;
+        scanf("%d", &N);
+        if (N >= 2) {
+            long long choices = (long long)N * (N - 1);
+            printf("%lld\n", choices);  
+        } else {
+            printf("0\n");
+        }
+    }
+}
