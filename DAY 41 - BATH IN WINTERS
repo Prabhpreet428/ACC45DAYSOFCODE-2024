@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int T;
+    scanf("%d", &T); 
+    while (T--) {
+        int X, Y;
+        scanf("%d %d", &X, &Y);  
+        int people_can_bathe = X / (2 * Y);
+        printf("%d\n", people_can_bathe);
+    }
+}
