@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int T;
+    scanf("%d", &T);
+    while (T--) {
+        int N, A, B;
+        scanf("%d %d %d", &N, &A, &B); 
+        int oddEpisodes = (N + 1) / 2; 
+        int evenEpisodes = N / 2;  
+        int totalDuration = oddEpisodes * B + evenEpisodes * A;
+        printf("%d\n", totalDuration);
+    }
+}
