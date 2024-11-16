@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int T; 
+    scanf("%d", &T);
+    while (T--) {
+        int N; 
+        scanf("%d", &N);
+        int sets_of_5 = N / 5;
+        int remaining_gifts = N % 5;
+        int coins = (sets_of_5 * 4) + remaining_gifts;
+        printf("%d\n", coins);
+    }
+}
