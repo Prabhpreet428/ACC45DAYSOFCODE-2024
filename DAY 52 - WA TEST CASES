@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int T;  
+    scanf("%d", &T);
+    while (T--) {
+        int N;  
+        scanf("%d", &N);
+        int sizes[N];  
+        for (int i = 0; i < N; i++) {
+            scanf("%d", &sizes[i]);
+        }
+        char verdicts[N + 1];  
+        scanf("%s", verdicts);
+        int minFailedSize = 1000000;  
+        for (int i = 0; i < N; i++) {
+            if (verdicts[i] == '0') { 
+                if (sizes[i] < minFailedSize) {
+                    minFailedSize = sizes[i];
+                }
+            }
+        }
+        printf("%d\n", minFailedSize); 
+    }
+}
